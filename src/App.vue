@@ -4,54 +4,54 @@
     <div class="form">
       <div v-if="!started">
         <label for="doorsAmount">How many doors?</label>
-        <input type="text" id="doorsAmount" v-model.number="doorsAmount">
+        <input type="text" id="doorsAmount" v-model.number="doorsAmount" />
       </div>
       <div v-if="!started">
         <label for="selectedDoor">Wich door?</label>
-        <input type="text" id="selectedDoor" v-model.number="selectedDoor">
+        <input type="text" id="selectedDoor" v-model.number="selectedDoor" />
       </div>
       <button v-if="!started" @click="started = !started">Start</button>
       <button v-if="started" @click="started = !started">Restart</button>
     </div>
     <div v-if="started" class="doors">
       <div v-for="i in doorsAmount" :key="i">
-        <Door :hasGift="i === selectedDoor" :number="i"/>
+        <Door :hasGift="i === selectedDoor" :number="i" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Door from './components/Door.vue'
+import Door from "./components/Door.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: { Door },
-  data: function () {
+  data: function() {
     return {
       started: false,
       doorsAmount: 3,
       selectedDoor: 1
-    }
+    };
   }
-}
+};
 </script>
 
 <style>
 * {
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {
-    color: #fff;
-    background-color: #5c6779;
+  color: #fff;
+  background-color: #5c6779;
 }
 
 #app {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #app h1 {
@@ -69,7 +69,9 @@ body {
   margin-bottom: 40px;
 }
 
-.form, .form input, .form button {
+.form,
+.form input,
+.form button {
   margin-bottom: 10px;
   font-size: 2rem;
 }

@@ -1,11 +1,11 @@
 <template>
   <div class="door-area">
-    <div class="door-frame">
+    <div class="door-frame" :class="{ selected }">
       <Gift v-if="open && hasGift" />
     </div>
-    <div class="door">
-      <div class="number"></div>
-      <div class="knob"></div>
+    <div class="door" :class="{ open }" @click="selectDoor">
+      <div class="number" :class="{ selected }"></div>
+      <div class="knob" :class="{ selected }" @click="openDoor"></div>
     </div>
   </div>
 </template>
@@ -24,6 +24,14 @@ export default {
     return {
       open: false,
       selected: false
+    }
+  },
+  methods: {
+    selectDoor() {
+      this.selected = !this.selected
+    },
+    openDoor() {
+      this.open = true
     }
   }
 }
