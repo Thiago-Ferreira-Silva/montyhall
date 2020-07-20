@@ -18,7 +18,8 @@ The given probabilities depend on specific assumptions about how the host and co
 Many readers of vos Savant's column refused to believe switching is beneficial despite her explanation. After the problem appeared in Parade, approximately 10,000 readers, including nearly 1,000 with PhDs, wrote to the magazine, most of them claiming vos Savant was wrong (Tierney 1991). Even when given explanations, simulations, and formal mathematical proofs, many people still do not accept that switching is the best strategy (vos Savant 1991a). Paul Erdős, one of the most prolific mathematicians in history, remained unconvinced until he was shown a computer simulation demonstrating vos Savant's predicted result (Vazsonyi 1999).
 
 The problem is a paradox of the veridical type, because the correct choice (that one should switch doors) is so counterintuitive it can seem absurd, but is nevertheless demonstrably true. The Monty Hall problem is mathematically closely related to the earlier Three Prisoners problem and to the much older Bertrand's box paradox."
-*text from wikipedia
+
+text from [wikipedia](https://en.wikipedia.org/wiki/Monty_Hall_problem)
 
 ## Project setup
 ```
