@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Montyhall</h1>
+    <h1>Monty Hall problem</h1>
     <div class="form">
       <div v-if="!started">
         <label for="doorsAmount">How many doors?</label>
